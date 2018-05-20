@@ -2,7 +2,7 @@
 window.addEventListener("load",bindEvents);
 var buttonArray;
 function bindEvents(){
-  buttonArray= document.getElementByTagName("button");
+  buttonArray= document.getElementsByTagName("button");
   for(let i=0; i<buttonArray.length;i++){
     buttonArray[i].addEventListener("click",printXorZero);
   }
