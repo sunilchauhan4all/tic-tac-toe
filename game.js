@@ -1,4 +1,5 @@
-window.addEventListner("load",bindEvents);
+
+window.addEventListener("load",bindEvents);
 var buttonArray;
 function bindEvents(){
   buttonArray= document.getElementByTagName("button");
