@@ -47,6 +47,10 @@ function gameOver(){
         isGameDone= true;
         alert("Game Over");
     }
+    if(isSameRow(buttonArray[3],buttonArray[4],buttonArray[6])){
+        isGameDone= true;
+        alert("Game Over");
+    }
   if(isSameRow(buttonArray[6],buttonArray[7],buttonArray[8])){
         isGameDone= true;
         alert("Game Over");
