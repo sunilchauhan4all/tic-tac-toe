@@ -55,7 +55,7 @@ function gameOver(){
 }
 
 var isXorZero = false;
-Var playerName=you;
+Var playerName="you";
 function printXorZero(){
     //console.log("Testing...",this);
     var buttonValue = this.innerHTML;
