@@ -62,8 +62,7 @@ function printXorZero(){
     if(!buttonValue && !isGameDone){
             this.innerHTML = isXorZero?"X":"0";
             isXorZero = !isXorZero;
-            document.write(plyName);
-           console.log(plyName);
+            
             gameOver();
     }
 }
