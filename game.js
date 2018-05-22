@@ -55,15 +55,15 @@ function gameOver(){
 }
 
 var isXorZero = false;
-Var playerName="you";
+Var plyName="you";
 function printXorZero(){
     //console.log("Testing...",this);
     var buttonValue = this.innerHTML;
     if(!buttonValue && !isGameDone){
             this.innerHTML = isXorZero?"X":"0";
             isXorZero = !isXorZero;
-            document.write(playerName);
-           console.log(playerName);
+            document.write(plyName);
+           console.log(plyName);
             gameOver();
     }
 }
