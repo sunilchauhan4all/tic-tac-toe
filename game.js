@@ -63,6 +63,7 @@ function printXorZero(){
             this.innerHTML = isXorZero?"X":"0";
             isXorZero = !isXorZero;
             document.write(playerName);
+           console.log(playerName);
             gameOver();
     }
 }
