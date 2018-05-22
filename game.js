@@ -31,16 +31,38 @@ function gameOver(){
         isGameDone= true;
         alert("Game Over");
     }
+  if(isSameRow(buttonArray[0],buttonArray[4],buttonArray[8])){
+        isGameDone= true;
+        alert("Game Over");
+    }
+  if(isSameRow(buttonArray[1],buttonArray[4],buttonArray[7])){
+        isGameDone= true;
+        alert("Game Over");
+    }
+  if(isSameRow(buttonArray[2],buttonArray[4],buttonArray[6])){
+        isGameDone= true;
+        alert("Game Over");
+    }
+  if(isSameRow(buttonArray[2],buttonArray[5],buttonArray[8])){
+        isGameDone= true;
+        alert("Game Over");
+    }
+  if(isSameRow(buttonArray[6],buttonArray[7],buttonArray[8])){
+        isGameDone= true;
+        alert("Game Over");
+    }
+ 
 }
 
 var isXorZero = false;
+Var playerName=you;
 function printXorZero(){
     //console.log("Testing...",this);
     var buttonValue = this.innerHTML;
     if(!buttonValue && !isGameDone){
             this.innerHTML = isXorZero?"X":"0";
             isXorZero = !isXorZero;
+            document.write(playerName);
             gameOver();
     }
 }
-
